@@ -1,0 +1,104 @@
+:root {
+  --royal-blue: #12558A;
+  --off-white: #F5F5F5;
+  --light-blue: #E7F5FF;
+  --light-grey: #EFEFEF;
+  --light-purple: #C4C4FF;
+  --grey: #4E4E4E;
+}
+
+.app {
+  background-color: var(--royal-blue);
+  color: var(--off-white);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 500px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+.app-header {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.app-header h1 {
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.app-header p {
+  font-style: italic;
+  line-height: 145%;
+}
+
+@media (min-width: 800px) {
+  .app-header h1 {
+    font-size: 2.75rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .app-header p,
+  #text-q {
+    width: 75%;
+    font-size: 1.125rem;
+    margin: 0 auto;
+  }
+}
+
+#face {
+  width: 90%;
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 500px) {
+  #face {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (min-width: 800px) {
+  #face {
+    width: 50%;
+    height: auto;
+  }
+}
+
+#text-q {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#start-btn {
+  background-color: var(--off-white);
+  color: var(--royal-blue);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+}
+
+#start-btn:hover {
+  background: #ffffff;
+}
