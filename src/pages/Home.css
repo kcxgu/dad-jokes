@@ -1,36 +1,32 @@
-:root {
-  --royal-blue: #12558A;
-  --off-white: #F5F5F5;
-  --light-blue: #E7F5FF;
-  --light-grey: #EFEFEF;
-  --light-purple: #C4C4FF;
-  --grey: #4E4E4E;
-}
-
 .app {
   background-color: var(--royal-blue);
   color: var(--off-white);
+  height: 100%;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  height: 100vh;
-  padding: 0 3rem;
+  padding: 0 2rem;
   margin: 0 auto;
+  height: 100%;
 }
 
 @media (min-width: 500px) {
+  .app {
+    height: 100vh
+  }
+
   .container {
     width: 500px;
+    justify-content: space-evenly;
   }
 }
 
 @media (min-width: 800px) {
   .container {
-    width: 600px;
+    max-width: 600px;
   }
 }
 
@@ -41,10 +37,15 @@
 
 .app-header h1 {
   font-weight: 500;
-  padding-bottom: 1rem;
 }
 
 .app-header p {
+  line-height: 145%;
+  padding-top: 10px;
+  padding-bottom: 1rem;
+}
+
+.app-header p:last-of-type {
   font-style: italic;
   line-height: 145%;
 }
@@ -56,7 +57,7 @@
   }
 
   .app-header p,
-  #text-q {
+  #tagline {
     width: 75%;
     font-size: 1.125rem;
     margin: 0 auto;
@@ -83,9 +84,22 @@
   }
 }
 
-#text-q {
+#tagline {
   padding: 0.5rem;
   text-align: center;
+}
+
+#instructions {
+  padding: 1.25rem 0;
+  text-align: center;
+  line-height: 145%;
+}
+
+@media (min-width: 500px) {
+  #instructions {
+    padding: 0;
+    text-align: center;
+  }
 }
 
 #start-btn {
@@ -95,6 +109,7 @@
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.3px;
+  margin: 1rem auto;
   padding: 0.75rem 1.5rem;
   cursor: pointer;
 }

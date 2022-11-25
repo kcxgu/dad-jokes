@@ -3,7 +3,7 @@
     color: var(--royal-blue);
     display: flex;
     flex-direction: column;
-    height: 100vh
+    height: 100vh;
 }
 
 @media (min-width: 500px) {
@@ -30,7 +30,7 @@
 .content {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.75rem;
     max-width: 800px;
     height: 70%;
     padding: 0 2rem;
@@ -43,30 +43,39 @@
 }
 
 .message {
-    max-width: 10rem;
+    max-width: 11rem;
     padding: 1rem 0.75rem;
     border-radius: 10px;
     color: black;
+}
+
+@media (min-width: 500px) {
+    .message {
+        max-width: 12rem;
+    }
 }
 
 #question {
     align-self: flex-start;
     background-color: var(--light-blue);
     line-height: 125%;
+    font-size: 18px;
 }
 
-#message1 {
+#human {
     align-self: flex-end;
     background-color: var(--light-purple);
     padding-right: 1rem;
     line-height: 125%;
+    font-size: 18px;
 }
 
-#message2 {
+#bot {
     align-self: flex-start;
     background-color: var(--light-blue);
     padding-right: 1rem;
     line-height: 125%;
+    font-size: 18px;
 }
 
 /* Submit */
@@ -77,32 +86,43 @@
     justify-content: space-between;
     border: 1px solid var(--royal-blue);
     border-radius: 8px;
-    padding: 0.5rem 0.75rem;
-    margin: 2rem auto;
+    padding: 0.75rem 0.75rem 0.5rem 0.75rem;
+    margin: 0 auto;
 }
 
 .user-submit input {
+    font-size: 16px;
     min-width: 10rem;
     margin-right: 1.25rem;
     border-bottom: 1px dashed var(--royal-blue);
 }
 
 .user-submit button {
+    font-size: 16px;
     background-color: var(--royal-blue);
     color: var(--off-white);
     border-radius: 5px;
-    padding: 7.5px 15px;
+    padding: 6px 12px;
+    cursor: pointer;
 }
 
 .user-submit input::placeholder {
+    font-size: 16px;
     color: var(--royal-blue);
     text-align: left;
 }
 
-@media (min-width: 400px) {
+#reminder {
+    text-align: center;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+@media (min-width: 450px) {
     .user-submit {
         padding: 0.6rem 1rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1rem;
     }
 
     .user-submit input {
@@ -115,98 +135,15 @@
         padding: 8px 15.5px;
         font-size: 0.9rem;
     }
+
+    #reminder {
+        padding: 0;
+        margin-bottom: 1rem;
+    }
 }
 
 /* The End */
-.end {
-    padding: 3rem 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 68vh;
-}
-
-.end p {
-    font-size: 0.8rem;
-}
-
 .top {
     text-align: center;
     line-height: 300%;
-}
-
-.middle {
-    text-align: center;
-    line-height: 175%;
-}
-
-.share {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem;
-    width: fit-content;
-    line-height: 150%;
-    font-weight: 500;
-    padding: 0.8rem 0.6rem;
-    border: 2px dashed white;
-}
-
-#copy {
-    cursor: pointer;
-    padding: 6px 2px 1px 6px;
-}
-
-#copy:hover {
-    opacity: 0.7;
-    border-radius: 5px;
-    background: #EFEFEF;
-    box-shadow: inset 5px 5px 5px #cdcdcd,
-        inset -5px -5px 5px #ffffff;
-}
-
-#icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#copied {
-    text-align: center;
-    padding-top: 5px;
-    font-weight: 400;
-}
-
-#copied p {
-    font-size: 0.7rem;
-}
-
-@media (min-width:500px) {
-    .end {
-        padding: 4rem 0;
-    }
-
-    .end p {
-        font-size: 1rem;
-    }
-
-    .share {
-        width: 60%;
-        padding: 1rem;
-    }
-
-    #copy {
-        border-radius: 3px;
-        padding: 9px 7px 4px 9px;
-        background: #EFEFEF;
-        box-shadow: 5px 5px 11px #cbcbcb,
-            -5px -5px 11px #ffffff;
-    }
-
-    #copied p {
-        font-size: 0.8rem;
-    }
 }

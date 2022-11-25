@@ -1,121 +1,129 @@
+import { correctResponseOptions, incorrectResponseOptions } from "../utils/Responses";
 import { date } from "../utils/Date";
 import { jokes } from "../utils/JokesQA";
 import { useState, useRef } from "react";
 import HeaderComponent from "../components/Header";
-import copyIcon from "../icons/copy.svg";
+import FooterComponent from "../components/Footer";
 import "./Jokes.css"
+import EndComponent from "../components/End";
 
 export default function Jokes() {
     const [currentJoke, setCurrentJoke] = useState(0);
     const [score, setScore] = useState(0);
     const [end, setEnd] = useState(false);
-    const [copied, setCopied] = useState("");
 
-    const botmessage = useRef();
+    const botMessage = useRef();
     const humanMessage = useRef();
+    const commentMessage = useRef();
     const input = useRef();
 
     const jokeLimit = 5;
+    const randomniser = Math.floor(Math.random() * incorrectResponseOptions.length)
 
+    // Day-Set Logic
+    const startDate = new Date(2022, 10, 24);
+    const msOffset = Date.now() - startDate;
+    const dayOffset = msOffset / 1000 / 60 / 60 / 24;
+
+    let set = [];
+    let targetSet = [];
+    for (let i = 0; i < jokes.length; i += 5) {
+        set.push(jokes.slice(i, i + jokeLimit))
+        targetSet = set[Math.floor(dayOffset)]
+    }
 
     const handleInput = () => {
         const inputRef = input.current;
         let getHumanMessage = humanMessage.current;
-        let getBotMessage = botmessage.current;
+        let getBotMessage = botMessage.current;
+        let getCommentMessage = commentMessage.current;
 
-        let correctAnswer = new RegExp(jokes[currentJoke].answer);
+        let correctAnswer = new RegExp(targetSet[currentJoke].answer);
         let inputValue = document.querySelector("#input").value;
 
         if (correctAnswer.test(inputValue.toLowerCase())) {
             getBotMessage.innerText = "Typing...";
             setTimeout(() => {
-                getBotMessage.setAttribute("id", "message2");
-                getBotMessage.innerText = "Correct!";
-                inputRef.value = ""; // clear the input
+                getBotMessage.setAttribute("id", "bot");
+                getBotMessage.innerText = correctResponseOptions[randomniser];
+                inputRef.value = "";
             }, 1000);
             setTimeout(() => {
+                getCommentMessage.setAttribute("id", "bot");
+                getCommentMessage.innerText = targetSet[currentJoke].comment;
+            }, 2000);
+            setTimeout(() => {
                 setScore(score + 1);
-            }, 1500)
+            }, 2000)
         } else {
             getBotMessage.innerText = "Typing...";
             setTimeout(() => {
-                getBotMessage.setAttribute("id", "message2");
-                getBotMessage.innerText = "Uh-oh! That's not quite right.";
-                inputRef.value = ""; // clear the input
+                getBotMessage.setAttribute("id", "bot");
+                getBotMessage.innerText = incorrectResponseOptions[randomniser];
+                inputRef.value = "";
             }, 1000);
-
+            setTimeout(() => {
+                getCommentMessage.setAttribute("id", "bot");
+                getCommentMessage.innerText = targetSet[currentJoke].comment;
+            }, 2000);
         }
 
-        getHumanMessage.setAttribute("id", "message1")
+        getHumanMessage.setAttribute("id", "human")
         getHumanMessage.innerText = inputRef.value;
 
         setTimeout(() => {
             getHumanMessage.setAttribute("id", "");
-            getBotMessage.innerText = "";
-            getBotMessage.setAttribute("id", "");
             getHumanMessage.innerText = "";
+            getBotMessage.setAttribute("id", "");
+            getBotMessage.innerText = "";
+            getCommentMessage.setAttribute("id", "");
+            getCommentMessage.innerText = "";
             const nextJoke = currentJoke + 1;
-            if (nextJoke < jokeLimit) {
+            if (nextJoke < targetSet.length) {
                 setCurrentJoke(nextJoke);
             } else {
                 setEnd(true);
             }
-        }, 2500);
+        }, 5000);
     };
 
-    function copyLink() {
-        navigator.clipboard.writeText("www.kcxgu.github.io/dadjokes")
-        setCopied('Copied!')
-    }
 
     return (
         <div className="quiz">
             <HeaderComponent score={score} />
             <div id="display">
                 <p id='date'>{date}</p>
-                <p>Joke {currentJoke + 1} of {jokeLimit}</p>
+                <p>Joke {currentJoke + 1} of {targetSet.length}</p>
             </div>
             {end ? (
-                <div className="end">
+                <>
                     <div className="top">
-                        <h1>The End!</h1>
+                        <h1>The End</h1>
+                        <h3>You scored: {score} out of {targetSet.length}!</h3>
                         <p>Come back tomorrow for more funnies 🤭</p>
                     </div>
-                    <div className="middle">
-                        <p>Share with a friend to see who's cheesier.</p>
-                        <p>Or better yet, play against your dad!</p>
-                    </div>
-                    <div className="share">
-                        <div id="text">
-                            <p>Share with a friend:</p>
-                            <p id="link">
-                                www.kcxgu.github.io/dadjokes
-                            </p>
-                        </div>
-                        <div id="icon">
-                            <button id="copy" onClick={copyLink}>
-                                <img src={copyIcon} alt="copy link to dad jokes game"></img>
-                            </button>
-                            <div id="copied">
-                                <p>{copied}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <EndComponent />
+                    <FooterComponent />
+                </>
             ) : (
                 <>
                     <div className="content">
-                        <div className="bot message" id="question">
-                            {jokes[currentJoke].question}
+                        <div className="message" id="question">
+                            {targetSet[currentJoke].question}
                         </div>
                         <div
-                            className="human message"
+                            className="message"
                             ref={humanMessage}
                         >
                         </div>
                         <div
-                            className="bot message"
-                            ref={botmessage}
+                            className="message"
+                            ref={botMessage}
+                        >
+                        </div>
+                        <div
+                            className="message"
+                            ref={commentMessage}
                         >
                         </div>
                     </div>
@@ -127,6 +135,8 @@ export default function Jokes() {
                             ref={input} />
                         <button onClick={handleInput}>Send</button>
                     </div>
+                    <p id="reminder">Friendly reminder: watch out for those sneaky typos.</p>
+                    <FooterComponent />
                 </>
             )}
         </div>
