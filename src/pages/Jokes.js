@@ -1,13 +1,17 @@
 import { correctResponseOptions, incorrectResponseOptions } from "../utils/Responses";
 import { date } from "../utils/Date";
 import { jokes } from "../utils/JokesQA";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import HeaderComponent from "../components/Header";
 import FooterComponent from "../components/Footer";
 import EndComponent from "../components/End";
 import "./Jokes.css"
 
 export default function Jokes() {
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
+
     const [currentJoke, setCurrentJoke] = useState(0);
     const [score, setScore] = useState(0);
     const [end, setEnd] = useState(false);
@@ -39,6 +43,8 @@ export default function Jokes() {
     }
 
     const handleInput = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+
         let inputRef = input.current;
         let getHumanMessage = humanMessage.current;
         let getBotMessage = botMessage.current;
@@ -97,7 +103,6 @@ export default function Jokes() {
         }, 5000);
     };
 
-
     return (
         <div className="quiz">
             <HeaderComponent score={score} />
@@ -146,7 +151,7 @@ export default function Jokes() {
                         />
                         <button onClick={handleInput}>Send</button>
                     </div>
-                    <p id="reminder">Friendly reminder: watch out for those sneaky typos.</p>
+                    <p id="reminder">Give your dad a minute to type the next joke</p>
                     <FooterComponent />
                 </>
             )}

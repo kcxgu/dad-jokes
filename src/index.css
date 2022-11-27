@@ -17,8 +17,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F5F5F5;
+  background-color: var(--royal-blue);
   height: 100vh;
+}
+
+@media (min-width: 700px) {
+  body {
+    background-color: var(--off-white);
+  }
 }
 
 code {

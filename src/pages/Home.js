@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import faceImg from "./face.svg"
 import './Home.css';
 
 export default function Home() {
@@ -9,7 +11,7 @@ export default function Home() {
                     <p>❄️ Christmas Edition ❄️</p>
                     <p>An indescribably cheesy joke typically (but not necessarily) made by a father to his children.</p>
                 </header>
-                <img src='../face.svg' alt='dad jokes head back laughing' id='face'></img>
+                <img src={faceImg} alt='dad jokes head back laughing' id='face'></img>
                 <p id='tagline'>5 jokes a day, keep your dad at bay.</p>
                 <div id='instructions'>
                     <p>Spelling matters to a certain extent.</p>
@@ -17,9 +19,9 @@ export default function Home() {
                     <p>Accepted answers are:</p>
                     <p>"adorable", "a-door-able", "adoorable".</p>
                 </div>
-                <a href='/jokes'>
+                <Link to='/jokes'>
                     <button id='start-btn'>Start</button>
-                </a>
+                </Link>
             </div>
         </div >
     );

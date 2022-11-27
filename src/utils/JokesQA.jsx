@@ -31,7 +31,7 @@ const jokes = [
     },
     {
         question: "What’s the difference between the Christmas alphabet and the ordinary alphabet?",
-        answer: "no l|no-el|no el",
+        answer: "no l|no-el|no el|noel",
         comment: "The Christmas alphabet has No-el... get it?"
     },
     {

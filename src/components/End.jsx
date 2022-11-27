@@ -11,7 +11,7 @@ export default function EndComponent() {
         const shareLink = {
             title: 'Dad Jokes',
             text: 'Can you beat me at dad jokes?',
-            url: 'https://www.kcxgu.github.io/dad-jokes'
+            url: 'https://kcxgu.github.io/dad-jokes/'
         }
 
         copyBtn.addEventListener('click', async () => {
