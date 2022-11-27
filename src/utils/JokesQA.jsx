@@ -2,7 +2,7 @@ const jokes = [
     {
         question: "How will Christmas dinner be different after Brexit?",
         answer: "brussels",
-        comment: "No Brussels"
+        comment: "No Brussels... 😢"
     },
     {
         question: "Why are Christmas trees so bad at sewing?",
@@ -36,12 +36,12 @@ const jokes = [
     },
     {
         question: "What type of music do elves like best?",
-        answer: "wrap|rap",
+        answer: "rap",
         comment: "Everyday they be (w)rapping!"
     },
     {
         question: "What do you get when you mix a Christmas tree and an iPad?",
-        answer: "pineapple",
+        answer: "pineapple|pine-apple",
         comment: "A pineapple! Time for a piña colada, anyone?"
     },
     {
@@ -788,6 +788,16 @@ const jokes = [
         question: "What athlete is warmest in winter?",
         answer: "long jump|long jumper",
         comment: "A long jumper!"
+    },
+    {
+        question: "What do you find in December but not in any other month?",
+        answer: "d",
+        comment: "The letter D! Ha!"
+    },
+    {
+        question: "Which of Santa’s reindeer are dinosaurs afraid of?",
+        answer: "comet",
+        comment: "Comet!"
     },
 ]
 

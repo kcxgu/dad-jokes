@@ -40,7 +40,6 @@ First, the per day logic: First, we take the starting date and subtract it from 
 
 For the 5 jokes per day, this took longer to get it right but in reality, it's not too difficult. As the list of jokes will continue to increase, it's more efficient to take however long the jokes list is and slice it into sets of five first. Then push the corresponding set into the target jokes set depending on the day offset. 
 
-
 ## To do:
 - Add keyboard for mobile
-- Error handling/prevention
+- User testing and feedback

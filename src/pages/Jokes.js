@@ -4,8 +4,8 @@ import { jokes } from "../utils/JokesQA";
 import { useState, useRef } from "react";
 import HeaderComponent from "../components/Header";
 import FooterComponent from "../components/Footer";
-import "./Jokes.css"
 import EndComponent from "../components/End";
+import "./Jokes.css"
 
 export default function Jokes() {
     const [currentJoke, setCurrentJoke] = useState(0);
@@ -18,10 +18,11 @@ export default function Jokes() {
     const input = useRef();
 
     const jokeLimit = 5;
-    const randomniser = Math.floor(Math.random() * incorrectResponseOptions.length)
+    const randomiseResponse = Math.floor(Math.random() * incorrectResponseOptions.length)
+
 
     // Day-Set Logic
-    const startDate = new Date(2022, 10, 24);
+    const startDate = new Date(2022, 10, 26);
     const msOffset = Date.now() - startDate;
     const dayOffset = msOffset / 1000 / 60 / 60 / 24;
 
@@ -32,11 +33,20 @@ export default function Jokes() {
         targetSet = set[Math.floor(dayOffset)]
     }
 
+    if (!targetSet) {
+        jokes.sort(() => Math.random() - 0.5)
+        targetSet = jokes.slice(0, jokeLimit)
+    }
+
     const handleInput = () => {
-        const inputRef = input.current;
+        let inputRef = input.current;
         let getHumanMessage = humanMessage.current;
         let getBotMessage = botMessage.current;
         let getCommentMessage = commentMessage.current;
+
+        if (inputRef.value === "") {
+            inputRef.value = "I haven't the foggiest"
+        }
 
         let correctAnswer = new RegExp(targetSet[currentJoke].answer);
         let inputValue = document.querySelector("#input").value;
@@ -45,7 +55,7 @@ export default function Jokes() {
             getBotMessage.innerText = "Typing...";
             setTimeout(() => {
                 getBotMessage.setAttribute("id", "bot");
-                getBotMessage.innerText = correctResponseOptions[randomniser];
+                getBotMessage.innerText = correctResponseOptions[randomiseResponse];
                 inputRef.value = "";
             }, 1000);
             setTimeout(() => {
@@ -59,7 +69,7 @@ export default function Jokes() {
             getBotMessage.innerText = "Typing...";
             setTimeout(() => {
                 getBotMessage.setAttribute("id", "bot");
-                getBotMessage.innerText = incorrectResponseOptions[randomniser];
+                getBotMessage.innerText = incorrectResponseOptions[randomiseResponse];
                 inputRef.value = "";
             }, 1000);
             setTimeout(() => {
@@ -132,7 +142,8 @@ export default function Jokes() {
                             type="text"
                             id="input"
                             placeholder="Enter your answer here"
-                            ref={input} />
+                            ref={input}
+                        />
                         <button onClick={handleInput}>Send</button>
                     </div>
                     <p id="reminder">Friendly reminder: watch out for those sneaky typos.</p>
