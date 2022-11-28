@@ -1,804 +1,857 @@
 const jokes = [
     {
-        question: "How will Christmas dinner be different after Brexit?",
-        answer: "brussels",
-        comment: "No Brussels... 😢"
+        question: "What's a robot's favorite snack?",
+        answer: "computer chips",
+        comment: "computer chips!"
     },
     {
-        question: "Why are Christmas trees so bad at sewing?",
-        answer: "needles",
-        comment: "They always drop their needles!"
+        question: "What has more letters than the alphabet?",
+        answer: "post office",
+        comment: "The post office, of course!"
     },
     {
-        question: "What's the best way to gain confidence?",
-        answer: "self|elf",
-        comment: "Believe in your (s)elf!"
+        question: "What do you call an American bee?",
+        answer: "usb|usbee|usbee|us-bee",
+        comment: "A US bee... USB... I know, I know..."
     },
     {
-        question: "Did you hear that Santa knows karate?",
-        answer: "black belt",
-        comment: "He has a black belt!"
+        question: "Here's another one for you, how do you make 7 even?",
+        answer: "s",
+        comment: "Take away the s!"
     },
     {
-        question: "When do you know Microsoft has monopoly?",
-        answer: "windows",
-        comment: "When Santa switches from Chimneys to Windows. HA!"
+        question: "So how do you weigh a millennial?",
+        answer: "Instagram|insta-grams",
+        comment: "In (Insta)grams..."
     },
     {
-        question: "Where do elves vote?",
-        answer: "north poll",
-        comment: "The North Poll! 🗳"
+        question: "What do you call a witch who lives at the beach?",
+        answer: "sandwich|sandwitch|sand-witch|sand-witch",
+        comment: "A Sand-witch! 🥪"
     },
     {
-        question: "What’s the difference between the Christmas alphabet and the ordinary alphabet?",
-        answer: "no l|no-el|no el|noel",
-        comment: "The Christmas alphabet has No-el... get it?"
+        question: "What did Baby Corn say to Mama Corn?",
+        answer: "popcorn|pop corn",
+        comment: "Where's Pop Corn? Hahahaha!"
     },
     {
-        question: "What type of music do elves like best?",
-        answer: "rap",
-        comment: "Everyday they be (w)rapping!"
+        question: "Why couldn't the bicycle stand up by itself?",
+        answer: "two-tired|too tired|two tired|two tyred|too tyred|two-tyred|too-tyred",
+        comment: "It was two-tired!"
     },
     {
-        question: "What do you get when you mix a Christmas tree and an iPad?",
-        answer: "pineapple|pine-apple",
-        comment: "A pineapple! Time for a piña colada, anyone?"
+        question: "What do you call a man without a body but has a nose?",
+        answer: "no-body nose|nobody nose|no body nose|no-body knows|nobody knows|no body knows|",
+        comment: "No-body nose... Nobody knows"
     },
     {
-        question: "What do reindeer hang on their Christmas trees?",
-        answer: "hornaments",
-        comment: "Hornaments!"
+        question: "Why was the gossip disliked at the coffee shop?",
+        answer: "spill the tea|spills the tea",
+        comment: "She always spills the tea..."
     },
     {
-        question: "What happened to the man who stole an Advent Calendar last year?",
-        answer: "25 days|twentyfive days|twenty-five days",
-        comment: "He got 25 days! Ha!"
+        question: "Where do wasps like to get lunch?",
+        answer: "bistro|bee-stro",
+        comment: "A bee-stro!"
     },
     {
-        question: "What is an elf's favorite type of biscuit?",
-        answer: "shortbread|short bread",
-        comment: "Shortbread..."
+        question: "Hey, so why do pancakes always win at baseball?",
+        answer: "batter",
+        comment: "They have the best batter!"
     },
     {
-        question: "What do snowmen wear on their heads?",
-        answer: "ice cap",
-        comment: "Ice caps!"
+        question: "Which bear is the most condescending?",
+        answer: "pan-duh|panda",
+        comment: "Pan-duh! 🐼"
     },
     {
-        question: "Why did the Christmas tree go to the dentist?",
-        answer: "root canal",
-        comment: "It needed a root canal!"
+        question: "Why couldn't the couple get married at the library?",
+        answer: "booked up",
+        comment: "It was all booked up"
     },
     {
-        question: "Which reindeer has the worst manners?",
-        answer: "rudolph|rude-olph|rudeolph|rudolf|rude-olf",
-        comment: "Rude-olph, of course 😉."
+        question: "Here's one for you, why was the ghost so tired??",
+        answer: "graveyard shift",
+        comment: "He worked the graveyard shift!"
     },
     {
-        question: "How did Scrooge win the football game?",
-        answer: "passed",
-        comment: "The ghost of Christmas passed!"
+        question: "Why would doors do well on social media?",
+        answer: "handles",
+        comment: "Everyone looks for their handles"
     },
     {
-        question: "Who do elf music fans call the King?",
-        answer: "elfis|elvis",
-        comment: "Elfis!"
+        question: "What’s brown and sticky?",
+        answer: "stick",
+        comment: "A... stick HA!"
     },
     {
-        question: "Why did the turkey join the band?",
-        answer: "drumsticks|drum sticks",
-        comment: "Because he/she/it/they had drumsticks! 🥁"
+        question: "Why do tall people always get along so well??",
+        answer: "see eye to eye",
+        comment: "The could really see eye to eye"
     },
     {
-        question: "Which of Santa's reindeers has the best moves?",
-        answer: "dancer",
-        comment: "Dancer, obviously!"
+        question: "What did the air conditioner say when it met a celebrity?",
+        answer: "fan",
+        comment: "I'm a big fan!"
     },
     {
-        question: "What was the snowman doing in the vegetable patch?",
-        answer: "nose",
-        comment: "He was picking his nose!"
+        question: "What vegetable is kind to everyone?",
+        answer: "sweet potato",
+        comment: "The sweet potato :)"
     },
     {
-        question: "What do you call a reindeer who can't see?",
-        answer: "no-eye deer|no eye deer|no idea",
-        comment: "No idea... No-eye deer! Get it?"
+        question: "What do you call a pudgy psychic?",
+        answer: "four-chin teller|fortune teller",
+        comment: "A four-chin teller..."
     },
     {
-        question: "What do you get when you cross a snowman with a vampire?",
-        answer: "frostbite|frost bite",
-        comment: "A frostbite! Ha ha ha"
+        question: "What's an oven's favourite compliment?",
+        answer: "on fire",
+        comment: "You've been on fire!"
     },
     {
-        question: "What does Santa eat for breakfast?",
-        answer: "frosted flakes",
-        comment: "His favourite cereal, of course - Frosted Flakes!"
+        question: "What did the baker say when she won an award?",
+        answer: "piece of cake",
+        comment: "Oh, it was a piece of cake!"
     },
     {
-        question: "What did Luke Skywalker say after he planted a Christmas tree farm? ",
-        answer: "may the forest be with you",
-        comment: "May the forest be with you!"
+        question: "What does a sprinter eat before a race?",
+        answer: "fast",
+        comment: "Nothing, they fast!"
     },
     {
-        question: "What do you get if you eat Christmas decorations?",
-        answer: "tinselitis|tonsillitis|tinsel-itis",
-        comment: "A bad case of tinsel-itis!"
+        question: "Why are elevator jokes so classic and good?",
+        answer: "levels",
+        comment: "Because they work on so many levels. All the right buttons are pushed."
     },
     {
-        question: "How do you know when Santa’s around?",
-        answer: "presents|presence",
-        comment: "You can always sense his presents. The best presence is presents, right? Wait, is that the right way round? 😉"
+        question: "What's the best thing about Switzerland?",
+        answer: "plus|flag",
+        comment: "I don't know, but the flag is a big plus!"
     },
     {
-        question: "What do snowmen call their offsprings?",
-        answer: "chill-dren|children|chilldren|chill dren",
-        comment: "Chill...dren"
+        question: "Why is Peter Pan always flying?",
+        answer: "neverlands|never lands|neverland|never land",
+        comment: "He neverlands!"
     },
     {
-        question: "How much did Santa pay for his sleigh?",
-        answer: "nothing|none|zero",
-        comment: "Nothing! It was on the house!"
+        question: "What kind of bird is always getting hurt?",
+        answer: "owl",
+        comment: "The owl! Get it?"
     },
     {
-        question: "What month does a Christmas tree hate the most?",
-        answer: "september|septimber|sep-timber",
-        comment: "Sep-timber!"
+        question: "What kind of shoes does a lazy person wear?",
+        answer: "loafer",
+        comment: "Loafers, of course!"
     },
     {
-        question: "What do Santa's little helpers learn at school?",
-        answer: "elfabet|elf-abet|alphabet",
-        comment: "The Elf-abet! Ha!"
+        question: "What do geometry teachers say when solving a problem?",
+        answer: "different angle",
+        comment: "Let's try a different angle..."
     },
     {
-        question: "What’s the most popular Christmas wine?",
-        answer: "brussels sprouts|brussel sprouts",
-        comment: "Everyone's always w(h)ining about brussels sprouts. I don't know why, it's one of my favourites!"
+        question: "What makes a basketball court trendy and accessorised?",
+        answer: "hoops",
+        comment: "The hoops!"
     },
     {
-        question: "How did the ornament get addicted to Christmas?",
-        answer: "hooked on trees",
-        comment: "The ornament has been hooked on trees his whole life!"
+        question: "What’s red and smells like blue paint?",
+        answer: "red paint",
+        comment: "Red paint, obviously!"
     },
     {
-        question: "What do you call Santa’s little helpers?",
-        answer: "subordinate clauses|subordinate claus",
-        comment: "Subordinate clauses!"
+        question: "Where do you learn to make a banana split?",
+        answer: "sunday|sundae",
+        comment: "Sundae school! Mmmmm...I could do with one of those!"
     },
     {
-        question: "What make of cars do elves drive? ",
-        answer: "toy-ota|toyota",
-        comment: "Toy-otas! Beep beep."
+        question: "Why do fathers take an extra pair of socks when they go golfing?",
+        answer: "hole in one",
+        comment: "In case they get a hole in one!"
     },
     {
-        question: "What are elves' favorite types of photos?",
-        answer: "elfies|selfies|s-elfies",
-        comment: "(S)Elfies! Like you"
+        question: "How do you follow Will Smith in the snow?",
+        answer: "fresh prince|fresh prints",
+        comment: "You follow the fresh prints."
     },
     {
-        question: "What do snowmen take when the weather gets too hot?",
-        answer: "chill pill",
-        comment: "They take a chill pill! You should too!"
+        question: "Where do algebra equations go on vacation?",
+        answer: "times square",
+        comment: "Times Square!"
     },
     {
-        question: "What are the best Christmas sweaters made from?",
-        answer: "fleece navidad|feliz navidad",
-        comment: "Fleece Navidad! Ho ho ho!"
+        question: "What did Sapphire's best friend tell her?",
+        answer: "real gem",
+        comment: "You're a real gem!"
     },
     {
-        question: "What does Santa suffer from if he gets stuck in a chimney?",
-        answer: "claustrophobia|claus-trophobia",
-        comment: "Claus-trophobia!"
+        question: "What's the best smelling insect?",
+        answer: "deodorant|ant|deodor ant|deodor-ant",
+        comment: "A deodor-ant"
     },
     {
-        question: "How did the two rival Christmas trees get along? ",
-        answer: "peace treaty|peace treety|peace tree-ty",
-        comment: "They signed a peace tree-ty!"
+        question: "What did one plate whisper to the other plate?",
+        answer: "dinner's on me|dinner is on me|dinner on me",
+        comment: "Dinner’s on me"
     },
     {
-        question: "What do reindeers say before they tell you a joke?",
-        answer: "sleigh|slay",
-        comment: "This one’s gonna sleigh you!"
+        question: "Where do boats go when they're sick?",
+        answer: "doc|dock",
+        comment: "To the doc(k), of course!"
     },
     {
-        question: "Why did the elf sleep in the fireplace?",
-        answer: "a log",
-        comment: "Because he wanted to sleep like a log!"
+        question: "If April showers bring May flowers, what do May flowers bring?",
+        answer: "pilgrims",
+        comment: "Time to read some history, kiddo. Pilgrims!"
     },
     {
-        question: "What do you call an elf who learns independently?",
-        answer: "self-taught|elf-taught|self taught|elf taught",
-        comment: "(S)Elf-taught! HA"
+        question: "Why shouldn't you trust trees?",
+        answer: "shade|shady",
+        comment: "Too many of them are shady... HA!"
     },
     {
-        question: "Why did the Grinch go to the liquor store?",
-        answer: "holiday spirit",
-        comment: "He went searching for some holiday spirit!"
+        question: "What has one head, one foot, and four legs?",
+        answer: "bed",
+        comment: "A bed!"
     },
     {
-        question: "What did one Christmas tree say to another?",
-        answer: "lighten up",
-        comment: "Lighten up!"
+        question: "What do you call dogs floating in water?",
+        answer: "good buoys|good boys",
+        comment: "Good buoys!"
     },
     {
-        question: "What do you call a broke Santa?",
-        answer: "saint nickel-less|saint nickeless|saint nicholas",
-        comment: "Saint Nickel-less..."
+        question: "What happens after the mascara and lipstick have a fight?",
+        answer: "make-up|make up|makeup",
+        comment: "They make-up..."
     },
     {
-        question: "Where do Santa’s reindeer stop for coffee?",
-        answer: "star-bucks|starbucks",
-        comment: "Star-bucks!"
+        question: "What happens when it rains cats and dogs? ",
+        answer: "poodle|puddle",
+        comment: "You have to be careful not to step in a poodle"
     },
     {
-        question: "What sport do elves like to play?",
-        answer: "miniature golf",
-        comment: "Miniature golf! ⛳️"
+        question: "Hey kid, what’s a vampire’s favorite ship?",
+        answer: "blood vessel",
+        comment: "A blood vessel!"
     },
     {
-        question: "Why did Frosty’s wife ask for a divorce?",
-        answer: "flake",
-        comment: "He was a total flake."
+        question: "What’s the least-spoken language in the world?",
+        answer: "sign language",
+        comment: "Sign language!"
     },
     {
-        question: "How do Christmas trees get their email?",
-        answer: "log on|log-on",
-        comment: "They log-on..."
+        question: "What did the janitor say when he jumped out of the closet?",
+        answer: "supplies",
+        comment: "Supplies!"
     },
     {
-        question: "Who is Santa’s favorite singer?",
-        answer: "elfis presley|elvis presley",
-        comment: "Elf-is Presley!"
+        question: "What did I find when I searched for a lighter on Amazon?",
+        answer: "matches",
+        comment: "6,000 matches..."
     },
     {
-        question: "Why didn’t Rudolph go to school??",
-        answer: "self-taught|elf-taught|self taught|elf taught",
-        comment: "Because he was (s)elf-taught!"
+        question: "How do you get a squirrel to like you?",
+        answer: "nut",
+        comment: "Act like a nut!"
     },
     {
-        question: "What do elves post on social media?",
-        answer: "elfies|selfies|s-elfies",
-        comment: "(S)elfies! You knew this!"
+        question: "What did the claustrophobic astronaut want?",
+        answer: "more space",
+        comment: "More space!"
     },
     {
-        question: "Who hides in the bakery at Christmas?",
-        answer: "mince spy|mince pie",
-        comment: "A mince spy! Did you spot him?"
+        question: "Why did the man name his dogs Rolex and Timex?",
+        answer: "watchdogs|watch dogs",
+        comment: "Because they were watchdogs..."
     },
     {
-        question: "What do you call a kid who doesn’t believe in Santa?",
-        answer: "rebel without a clause|rebel without a cause|rebel without a claus",
-        comment: "Rebel without a Claus!"
+        question: "What do you call a fish with no eye?",
+        answer: "fsh",
+        comment: "A fsh"
     },
     {
-        question: "What is an elf's favorite lunch?",
-        answer: "wrap",
-        comment: "A good wrap, of course! 🌯"
+        question: "What did the ocean say to the beach?",
+        answer: "waved",
+        comment: "Nothing, it just waved!"
     },
     {
-        question: "What is a Christmas tree's favorite candy?",
-        answer: "ornamints|orna-mints|orna mints",
-        comment: "Orna-mints! Ha!"
+        question: "Why don't eggs tell jokes?",
+        answer: "crack",
+        comment: "They'd crack each other up!"
     },
     {
-        question: "What is Santa's favourite camera?",
-        answer: "pole-aroid|polaroid",
-        comment: "A Pole-aroid camera!"
+        question: "What is the Easter bunny’s favorite type of music?",
+        answer: "hiphop|hip-hop|hip hop",
+        comment: "Hip-hop!"
     },
     {
-        question: "What do elves use to help them walk when they hurt their legs?",
-        answer: "candy canes",
-        comment: "Candy canes!"
+        question: "Cheeseburger walks into the bar, what did the bartender say?",
+        answer: "don't serve food",
+        comment: "Sorry, we don't serve food here! 😂"
     },
     {
-        question: "Why do you never see Santa at the hospital?",
-        answer: "private elf care",
-        comment: "He has private elf care!"
+        question: "What's the difference between an alligator and a crocodile?",
+        answer: "later|a while",
+        comment: "You see one later and one in a while... Ha!"
     },
     {
-        question: "Why don’t reindeers like picnics?",
-        answer: "ant-lures|antlers",
-        comment: "Because of their ant-lures 😉"
+        question: "What did one wall say to the other?",
+        answer: "corner",
+        comment: "I'll meet you round the corner!"
     },
     {
-        question: "What do you get if you cross Santa with a detective?",
-        answer: "santa clues",
-        comment: "Santa Clues! HA!"
+        question: "What did one DNA say to the other DNA?",
+        answer: "genes",
+        comment: "Do these genes make me look fat?"
     },
     {
-        question: "What do elves say when they see a friend whilst out and about?",
-        answer: "small world",
-        comment: "Small world!"
+        question: "Why did we sell the vacuum cleaner?",
+        answer: "gathering dust",
+        comment: "It was just sitting there gathering dust!"
     },
     {
-        question: "What’s green, covered in tinsel and goes ‘ribbet ribbet’?",
-        answer: "mistle-toad|mistletoad|mistle toad",
-        comment: "A Mistle-toad"
+        question: "What did they say about the restaurant on the moon?",
+        answer: "no atmosphere",
+        comment: "Great food, no atmosphere!"
     },
     {
-        question: "What is Santa’s nationality?",
-        answer: "north pole-ish|north polish",
-        comment: "He's North Pole-ish"
+        question: "What happened when the cheese factory exploded in France?",
+        answer: "brie",
+        comment: "Da brie is everywhere!"
     },
     {
-        question: "Why don't elves like reading novels?",
-        answer: "short story|short stories",
-        comment: "They prefer short stories..."
+        question: "Why didn't the skeleton climb up the mountain?",
+        answer: "guts",
+        comment: "It didn't have the guts!"
     },
     {
-        question: "What did the beaver say to the Christmas Tree?",
-        answer: "gnawing|knowing",
-        comment: "Nice gnawing you!"
+        question: "What do you call a snitching scientist?",
+        answer: "lab rat",
+        comment: "A lab rat!"
     },
     {
-        question: "Why don’t crabs like Christmas?",
-        answer: "selfish|shellfish|shell-fish|shell fish",
-        comment: "Because they’re shell-fish!"
+        question: "What if the Beatles made that submarine green?",
+        answer: "sublime",
+        comment: "It would have been sublime!"
     },
     {
-        question: "What’s every parent’s favorite Christmas Carol?",
-        answer: "silent night",
-        comment: "Silent Night!"
+        question: "What do you call a factory that makes okay products?",
+        answer: "satisfactory",
+        comment: "A satisfactory! Ha Ha Ha1!!"
     },
     {
-        question: "What are snowmen's favourite cereal?",
-        answer: "ice crispies|rice crispies|ice krispies|rice krispies",
-        comment: "(R)Ice Krispies!"
+        question: "Did you hear the rumor about butter?",
+        answer: "spread",
+        comment: "Well, I'm not going to spread it!"
     },
     {
-        question: "What do you call Santa when he takes a break?",
-        answer: "santa pause",
-        comment: "Santa Pause..."
+        question: "What’s orange and sounds like a parrot?",
+        answer: "carrot",
+        comment: "A carrot!"
     },
     {
-        question: "What does Santa do when his elves misbehave?",
-        answer: "sack",
-        comment: "He gives them the sack!"
+        question: "What are the strongest days of the week??",
+        answer: "Saturday|Sunday|Saturday and Sunday|Sunday and Saturday",
+        comment: "Saturday and Sunday. The others are weekdays."
     },
     {
-        question: "In which year did New Year’s Day come before Christmas",
-        answer: "every year",
-        comment: "EVERY year, silly!"
+        question: "Why did the scarecrow win an award?",
+        answer: "outstanding",
+        comment: "Because he was outstanding in his field!"
     },
     {
-        question: "What do you call an elf who won't share?",
-        answer: "elfish|selfish|s-elfish",
-        comment: "(S)Elfish..."
+        question: "How do you stop a bull from charging?",
+        answer: "cancel|card",
+        comment: "Cancel its credit card!"
     },
     {
-        question: "What do sheep say to each other on Christmas Day?",
-        answer: "ewe",
-        comment: "Merry Christmas to ewe! Ho ho ho!"
+        question: "What did one hat say to the other?",
+        answer: "head|ahead",
+        comment: "Stay here! I'm going on ahead!"
     },
     {
-        question: "How does a snowman lose weight?",
-        answer: "warm|warmer",
-        comment: "He waits for the weather to get warmer!"
+        question: "You'll know this one, what makes fish so smart?",
+        answer: "school",
+        comment: "They live in schools!"
     },
     {
-        question: "What does a grumpy sheep say on Christmas Day?",
-        answer: "ba humbug",
-        comment: "Baaaa humbug! Baaahahha"
+        question: "What did the sink say to the toilet?",
+        answer: "flushed",
+        comment: "You look flushed!"
     },
     {
-        question: "Why couldn’t the Christmas tree stand up?",
-        answer: "no legs",
-        comment: "Because it had no legs!"
+        question: "Why did the math book look so sad?",
+        answer: "problems",
+        comment: "Because it's got a lot of problems! Speaking of which, have you finished your homework?!"
     },
     {
-        question: "What kind of ball doesn’t bounce?",
-        answer: "snowball|snow ball",
-        comment: "A snowball!!"
+        question: "Hey kid, why can't a nose be 12 inches long?",
+        answer: "foot",
+        comment: "Because then it would be a foot!"
     },
     {
-        question: "Who is a Christmas tree's favorite singer?",
-        answer: "spruce springsteen",
-        comment: "No, not Elfis...Spruce Springsteen!"
+        question: "Why is the graveyard always so overcrowded?",
+        answer: "dying to",
+        comment: "People are always dying to get in!"
     },
     {
-        question: "What's a snowman's favourite compliment?",
-        answer: "cool",
-        comment: "You're cool, dude 😎"
+        question: "Why did the man fall down the well?",
+        answer: "see",
+        comment: "Because he couldn't see that well!"
     },
     {
-        question: "What falls at the North Pole and never gets hurt?",
-        answer: "snow",
-        comment: "Snow! Ha!"
+        question: "What do you call cheese that isn't yours?",
+        answer: "nacho",
+        comment: "Nacho cheese!"
     },
     {
-        question: "What's the Grinch's least favorite band?",
-        answer: "the who",
-        comment: "The Who!"
+        question: "What kind of shoes do ninjas wear?",
+        answer: "sneakers",
+        comment: "Sneakers!"
     },
     {
-        question: "Why did Santa’s little helper go and see a therapist?",
-        answer: "elf esteem|self esteem|self-esteem",
-        comment: "Because he had low (s)elf esteem..."
+        question: "How many tickles does it take to make an octopus laugh?",
+        answer: "ten|tentacles",
+        comment: "Ten tickles... get it? 🐙"
     },
     {
-        question: "What did Santa do when he went speed dating?",
-        answer: "cracker",
-        comment: "He pulled a cracker!"
+        question: "Why shouldn't you trust stairs?",
+        answer: "up to something",
+        comment: "They're always up to something!"
     },
     {
-        question: "What did Orna Ment write?",
-        answer: "decorate",
-        comment: "How To Decorate A Tree..."
+        question: "How does a penguin build its house?",
+        answer: "igloo|glues",
+        comment: "Igloos it together"
     },
     {
-        question: "What else did Orna Ment write?",
-        answer: "decorate",
-        comment: "How Not To Decorate A Tree..."
+        question: "What did the police officer say to his belly-button?",
+        answer: "under a vest",
+        comment: "You’re under a vest! Ha!"
     },
     {
-        question: "Where do polar bears vote?",
-        answer: "north poll",
-        comment: "The North Poll! 🗳"
+        question: "What does a bee use to brush its hair?",
+        answer: "honeycomb|honey comb",
+        comment: "A honeycomb!"
     },
     {
-        question: "Why do mummies like Christmas so much?",
-        answer: "wrapping",
-        comment: "They're really into all the wrapping"
+        question: "What do you call a toothless bear?",
+        answer: "gummy bear",
+        comment: "A gummy bear!"
     },
     {
-        question: "Why does Santa have three gardens?",
-        answer: "ho ho ho|hoe hoe hoe",
-        comment: "So he can ho(e) ho(e) ho(e)!"
+        question: "What happened to the kidnapping at school?",
+        answer: "woke",
+        comment: "He woke up!"
     },
     {
-        question: "What is the best Christmas present in the world?",
-        answer: "broken drum",
-        comment: "A broken drum. You just can’t beat it! Ha!"
+        question: "Why do I feel the need to tell such bad jokes?",
+        answer: "groan up|grown up|groan-up|grown-up",
+        comment: "I just want to help you become a groan up..."
     },
     {
-        question: "How do you help someone who’s lost their Christmas spirit?",
-        answer: "elf|health",
-        comment: "Nurse them back to elf! Get it?"
+        question: "What's the tell-tale sign of a beautiful wedding?",
+        answer: "in tiers|in tears",
+        comment: "Even the cake is in tiers!"
     },
     {
-        question: "What is it called when a snowman has a temper tantrum?",
-        answer: "meltdown|melt down",
-        comment: "A meltdown!"
+        question: "How do you get a country girl’s attention?",
+        answer: "tractor",
+        comment: "A tractor 😉. Get it?"
     },
     {
-        question: "Why are elves such great motivational speakers?",
-        answer: "elf confidence|self confidence|elf-confidence|self-confidence",
-        comment: "They have plenty of (s)elf-confidence!"
+        question: "Here's one for you, why are spiders so smart?",
+        answer: "web",
+        comment: "They can find everything on the web!"
     },
     {
-        question: "What did Adam say the day before Christmas? ",
-        answer: "christmas, eve|christmas eve",
-        comment: "It’s Christmas, Eve!"
+        question: "So what did the accountant say whilst auditing a document?",
+        answer: "taxing",
+        comment: "This is taxing..."
     },
     {
-        question: "What do you call an elf wearing ear muffs?",
-        answer: "anything",
-        comment: "Anything you want. He can’t hear you!"
+        question: "What do you call a belt made of watches?",
+        answer: "waiste of time|waste of time",
+        comment: "A waist of time!"
     },
     {
-        question: "Why do reindeer like Beyoncé so much?",
-        answer: "slays|sleighs",
-        comment: "She sleighs! Ha!"
+        question: "What did the two slices of bread say on their wedding day?",
+        answer: "loaf at first sight|love at first sight",
+        comment: "It was loaf at first sight!"
     },
     {
-        question: "What reindeer game do reindeers play at sleepovers?",
-        answer: "truth or dare|truth or deer",
-        comment: "Truth or deer, obviously!"
+        question: "Why was 6 afraid of 7?",
+        answer: "ate|eight|8",
+        comment: "Because 7 ate nine!"
     },
     {
-        question: "Why does Santa go down the chimney on Christmas Eve?",
-        answer: "soot|suit",
-        comment: "Because it soot's him..."
+        question: "Why did the raisin go out with the prune?",
+        answer: "date",
+        comment: "Because he couldn’t find a date!"
     },
     {
-        question: "Why did the Christmas tree go to the barber?",
-        answer: "trim",
-        comment: "It needed to be trimmed!"
+        question: "How do you row a canoe filled with puppies?",
+        answer: "doggy paddle|doggie paddle",
+        comment: "Bring out the doggy paddle!"
     },
     {
-        question: "What did the gingerbread man put on his bed?",
-        answer: "cookie sheet",
-        comment: "A cookie sheet!"
+        question: "What did the evil chicken lay?",
+        answer: "deviled eggs",
+        comment: "Deviled eggs!"
     },
     {
-        question: "Which of Santa’s friends is the most chill?",
-        answer: "jack frost",
-        comment: "Jack Frost"
+        question: "What is the most popular fish in the ocean?",
+        answer: "starfish|star fish",
+        comment: "The starfish!"
     },
     {
-        question: "Why is Santa not allowed to go down the chimneys this year?",
-        answer: "elf and safety|health and safety",
-        comment: "It was declared unsafe by the Elf and Safety Commission..."
+        question: "Do you know how much it costs to swim with a shark?",
+        answer: "arm and a leg",
+        comment: "An arm and a leg!"
     },
     {
-        question: "When Santa is at the beach what do the elves call him?",
-        answer: "sandy claus|sandy clause",
-        comment: "Sandy Claus!"
+        question: "What concert costs just 45 cents?",
+        answer: "nickelback",
+        comment: "50 Cent featuring Nickelback! HA!"
     },
     {
-        question: "What goes “OH, OH, OH”?",
-        answer: "backwards",
-        comment: "Santa walking backwards!"
+        question: "Why do I like telling Dad jokes so much?",
+        answer: "laughs",
+        comment: "Because he actually laughs!"
     },
     {
-        question: "What do you get if you cross Santa with a duck?",
-        answer: "christmas quacker",
-        comment: "A Christmas quacker!"
+        question: "What do you call it when you have a bladder infection?",
+        answer: "urine trouble|you're in trouble",
+        comment: "Urine trouble, ha! Get it? You're in trouble...?"
     },
     {
-        question: "Why do Donner and Blitzen get to take so many coffee breaks?",
-        answer: "star bucks|starbucks",
-        comment: "Because they are Santa's star bucks!"
+        question: "What do you call it when a group of apes starts a company?",
+        answer: "monkey business",
+        comment: "Monkey business!"
     },
     {
-        question: "What is Santa's favorite place to deliver presents?",
-        answer: "idaho|idaho ho ho|idaho-ho-ho",
-        comment: "Idaho-ho-ho"
+        question: "Do you know what I said when your mother asked me to sing 'Wonderwall'?",
+        answer: "I said maybe",
+        comment: "I said maybe..."
     },
     {
-        question: "What's red and white and falls down chimneys?",
-        answer: "santa klutz|santa kluts",
-        comment: "Santa Klutz!"
+        question: "What do you call a retired Terminator?",
+        answer: "exterminator|ex-terminator",
+        comment: "An Exterminator..."
     },
     {
-        question: "What’s as big as Santa but weighs nothing?",
-        answer: "shadow",
-        comment: "Santa’s shadow, of course!"
+        question: "Do you know why do nurses like red crayons?",
+        answer: "draw blood|drawing blood",
+        comment: "They're used to drawing blood"
     },
     {
-        question: "Who delivers Christmas presents to sharks?",
-        answer: "santa jaws",
-        comment: "Santa Jaws..."
+        question: "What kind of music do chiropractors like?",
+        answer: "hip hop|hip pop",
+        comment: "Hip pop!"
     },
     {
-        question: "Why is it so cold at Christmas?",
-        answer: "december|decemberrr|decemberrrr",
-        comment: "Because it's in Decembrrrrrr"
+        question: "What do you call an ocean of orange soda?",
+        answer: "fanta sea|fantasea|fanta-sea|fantasy",
+        comment: "A fanta-sea! Get it? Ha ha ha!"
     },
     {
-        question: "Where does a snowman keep his money?",
-        answer: "snow bank",
-        comment: "In a snow bank!"
+        question: "What kind of car does a sheep like to drive?",
+        answer: "lamborghini|lamb-orghini",
+        comment: "A lamborghini, of course!"
     },
     {
-        question: "Who is never hungry at Christmas?",
-        answer: "turkey",
-        comment: "The turkey! He’s always stuffed! Ha!"
+        question: "What country's capital is growing the fastest?",
+        answer: "ireland",
+        comment: "Ireland. Because every day it's Dublin!"
     },
     {
-        question: "Why did Santa get a parking ticket on Christmas Eve?",
-        answer: "snow parking|no parking",
-        comment: "He left his sleigh in a snow parking zone."
+        question: "Why were the utensils stuck together?",
+        answer: "spooning",
+        comment: "They were spooning!"
     },
     {
-        question: "What do snowmen like most about school?",
-        answer: "snow and tell|show and tell",
-        comment: "Snow and tell!"
+        question: "Hey, why should you never write with a broken pencil?",
+        answer: "pointless",
+        comment: "Because it’s pointless!"
     },
     {
-        question: "Why did Rudolph have a bad grade on his report card?",
-        answer: "history",
-        comment: "Because he went down in history!"
+        question: "Which ocean is as detail-oriented as me?",
+        answer: "pacific",
+        comment: "The Pacific Ocean!"
     },
     {
-        question: "Who’s Santa’s favorite singer?",
-        answer: "elfish presley|elvis presley",
-        comment: "Elfish Presley! Everyone loves Elfish Presley ❤️"
+        question: "What do you call a fake noodle?",
+        answer: "impasta|imposter|im-pasta",
+        comment: "An impasta!"
     },
     {
-        question: "What do snowmen eat for lunch?",
-        answer: "ice burgers|iceberg-ers|ice-berg-ers",
-        comment: "Iceberg-ers..."
+        question: "What's the seafood diet?",
+        answer: "see food",
+        comment: "you see food and you eat it!"
     },
     {
-        question: "What kind of motorbike does Santa ride?",
-        answer: "holly davidson|harley davidson",
-        comment: "A Holly Davidson!"
+        question: "Which US state has the most streets?",
+        answer: "rhode island|road island",
+        comment: "Rhode Island! Get it? Beep beep."
     },
     {
-        question: "Why did the gingerbread man go to the doctor?",
-        answer: "crummy|crumby|crumbly",
-        comment: "He was feeling crummy..."
+        question: "Why should you not tell them the joke about the roof?",
+        answer: "over their heads",
+        comment: "It'll go right over their heads!"
     },
     {
-        question: "How does a snowman get to work?",
-        answer: "bicycle|by icicle|by-icicle",
-        comment: "By icicle... get it? Bicycle..."
+        question: "How do you deal with a fear of speed bumps?",
+        answer: "slowly",
+        comment: "You slowly get over it"
     },
     {
-        question: "If an athlete gets athlete's foot, what does an elf get?",
-        answer: "mistletoe|mistle toe",
-        comment: "Mistle toe!"
+        question: "How can you tell it’s a dogwood tree?",
+        answer: "bark",
+        comment: "By the bark!"
     },
     {
-        question: "What do monkeys sing at Christmas?",
-        answer: "jingle bells|jungle bells",
-        comment: "Jungle bells! HA!"
+        question: "What do you call a pony with a sore throat?",
+        answer: "hoarse|horse",
+        comment: "A little hoarse!"
     },
     {
-        question: "What do elves do after school?",
-        answer: "gnome work|homework|gnomework",
-        comment: "Their gnome work"
+        question: "What does a house wear?",
+        answer: "address|a dress",
+        comment: "A(d)dress..."
     },
     {
-        question: "What does Santa use to bake cakes?",
-        answer: "elf-raising|self-raising|self raising|elf raising",
-        comment: "Elf-raising flour!"
+        question: "Why is the colour green always single?",
+        answer: "jaded",
+        comment: "It's jaded by love 🥲"
     },
     {
-        question: "Why is it getting harder to buy Advent calendars?",
-        answer: "numbered",
-        comment: "Because their days are numbered!"
+        question: "What do you call a sleeping bull?",
+        answer: "bulldozer",
+        comment: "A bulldozer!"
     },
     {
-        question: "What do you call an old snowman?",
-        answer: "puddle",
-        comment: "A puddle!"
+        question: "What type of tree fits in your hand?",
+        answer: "palm tree",
+        comment: "A palm tree!"
     },
     {
-        question: "Why did the little boy bring his Christmas tree to the hair salon?",
-        answer: "trim",
-        comment: "It needed a little trim."
+        question: "Why did the coach go back into the shop?",
+        answer: "quarterback|quarter back",
+        comment: "To get his quarterback!"
     },
     {
-        question: "What is Mrs Claus' favourite breakfast?",
-        answer: "mistletoast|mistle toast|mistle-toast",
-        comment: "Mistle-toast! HA HA HA!"
+        question: "You know this one, can February March?",
+        answer: "april may",
+        comment: "April May indeed!"
     },
     {
-        question: "Why is everyone so thirsty at the North Pole?",
-        answer: "no well|noel|no-el",
-        comment: "No well, no well! Get it? No-el, no-el!"
+        question: "Now, why is cold water so insecure?",
+        answer: "hot",
+        comment: "Because it’s never been called hot!"
     },
     {
-        question: "What did Santa say at the start of the race?",
-        answer: "ho ho ho",
-        comment: "Ready, set, ho ho ho!",
+        question: "What happens when a strawberry gets run over crossing the street?",
+        answer: "traffic jam",
+        comment: "...A traffic jam"
     },
     {
-        question: "Which former US president planted the most Christmas trees?",
-        answer: "woodrow wilson|wood row wilson|wood-row wilson",
-        comment: "Wood-row Wilson... Ha!"
+        question: "Hey kid, do you know how I know you're so good at sleeping?",
+        answer: "eyes closed",
+        comment: "Because you can do it with your eyes closed!"
     },
     {
-        question: "How do you scare a snowman?",
-        answer: "hairdryer",
-        comment: "Grab a hairdryer!"
+        question: "Do you know why I play football?",
+        answer: "for the kicks",
+        comment: "Because I'm doing it for the kicks!"
     },
     {
-        question: "What do they sing to Christmas trees at their retirement parties?",
-        answer: "fir",
-        comment: "🎶 Fir he’s a jolly good fellow, fir he’s a jolly good fellow... 🎶"
+        question: "What do you call two monkeys that share an Amazon account?",
+        answer: "prime mates|primates",
+        comment: "Prime mates!"
     },
     {
-        question: "What did the wise men say after they offered up their gifts of gold and frankincense?",
-        answer: "myrrh|more",
-        comment: "Wait, there's myrrh!"
+        question: "What did the neighbours say when I took up fencing?",
+        answer: "back",
+        comment: "They demanded that I put it back!"
     },
     {
-        question: "What’s as big as a Christmas tree but is lighter than a feather?",
-        answer: "shadow",
-        comment: "Its shadow!"
+        question: "What does garlic do when it gets hot?",
+        answer: "cloves off|clothes off",
+        comment: "It takes its cloves off!"
     },
     {
-        question: "What is Santa's dog's name?",
-        answer: "paws",
-        comment: "Santa Paws!"
+        question: "What do you call a mountain that likes to tell jokes?",
+        answer: "hill areas|hilarious",
+        comment: "They're hill areas! Just like me!"
     },
     {
-        question: "What did the Christmas tree do after its bank closed?",
-        answer: "branch",
-        comment: "It started his own branch!"
+        question: "Why is it inappropriate to make a 'dad joke' if you're not a dad?",
+        answer: "faux pa|faux pas",
+        comment: "It's a faux pa!"
     },
     {
-        question: "Who's Santa Claus's favorite pop star?",
-        answer: "beyonce|beyonsleigh|beyon-sleigh",
-        comment: "It's Beyon-sleigh... HA!"
+        question: "What do you call an unpredictable camera?",
+        answer: "loose canon|loose cannon",
+        comment: "A loose Canon! Say cheese...."
     },
     {
-        question: "Where does Santa always stay when he goes on any vacation?",
-        answer: "hotel|ho ho hotel|ho-ho-hotel",
-        comment: "At the ho-ho-ho-tel!"
+        question: "Where do young trees go to learn?",
+        answer: "elementree|elementry",
+        comment: "Elementree school!"
     },
     {
-        question: "What does Santa do when the reindeers go too fast?",
-        answer: "deer life",
-        comment: "Hold on for deer life! Get it?"
+        question: "What's the best way to watch a fly fishing tournament?",
+        answer: "live stream",
+        comment: "Live stream! Hurrah!"
     },
     {
-        question: "Where would you find a snowman dancing?",
-        answer: "snowball|snow ball",
-        comment: "At a snowball!"
+        question: "What made the tomato blush?",
+        answer: "salad dressing",
+        comment: "It saw the salad dressing 😳"
     },
     {
-        question: "What do you call cutting down a Christmas tree?",
-        answer: "christmas chopping",
-        comment: "Christmas chopping!"
+        question: "Why should you never trust atoms?",
+        answer: "make up",
+        comment: "They make up everything!"
     },
     {
-        question: "Which christmas song should you sing to your fruits?",
-        answer: "berry little christmas",
-        comment: "🎵 Have Yourself A Berry Little Christmas 🎵"
+        question: "Can we dive in this pool?",
+        answer: "depends|deep ends|deep-ends",
+        comment: "It deep-ends..."
     },
     {
-        question: "How is Drake like an elf?",
-        answer: "wrapping|rapping",
-        comment: "He spends all his time (w)rapping! Ho ho ho!"
+        question: "What do you call a naughty lamb dressed up like a skeleton for Halloween?",
+        answer: "to the bone",
+        comment: "Baaaad to the bone! Ha!"
     },
     {
-        question: "What do you call someone who can't stop talking about last Christmas? ",
-        answer: "sentimental|santamental|santa-mental",
-        comment: "They're feeling Santa-mental!"
+        question: "How does a hurricane see?",
+        answer: "one eye",
+        comment: "With one eye!",
     },
     {
-        question: "What did one snowman say to the other snowman?",
-        answer: "carrots",
-        comment: "Do you smell carrots?"
+        question: "What's a tornado's favorite game?",
+        answer: "twister",
+        comment: "Twister!",
     },
     {
-        question: "What do you call a snowman with a six-pack?",
-        answer: "abdominal snowman|abominable snowman",
-        comment: "The abdominal snowman"
+        question: "Do you know why I never told you that joke about the pizza?",
+        answer: "cheesy",
+        comment: "It was too cheesy!"
     },
     {
-        question: "How long are an elf's legs?",
-        answer: "the ground",
-        comment: "Just long enough to reach the ground, silly!"
+        question: "Why do vampires always seem sick?",
+        answer: "coffin",
+        comment: "They're coffin!"
     },
     {
-        question: "How does Rudolph know when Christmas is coming?",
-        answer: "calen-deer|calendeer",
-        comment: "He refers to his calen-deer... HA HA HA"
+        question: "When does a joke become a dad joke?",
+        answer: "apparent|a parent",
+        comment: "When it becomes a(p)parent! Ha!"
     },
     {
-        question: "Why is a foot a good Christmas present?",
-        answer: "stocking filler|fills stocking",
-        comment: "Because it makes a good stocking filler!"
+        question: "What gets wetter the more it dries?",
+        answer: "towel",
+        comment: "A towel!"
     },
     {
-        question: "What's red, white, and green?",
-        answer: "sick",
-        comment: "Santa Claus when he's travel sick!"
+        question: "How do celebrities stay cool?",
+        answer: "fans",
+        comment: "They have many fans... I know, I know..."
     },
     {
-        question: "What did one cranberry say to another at Christmas?",
-        answer: "jelly",
-        comment: "'Tis the season to be jelly!"
+        question: "How do you rate that joke about paper?",
+        answer: "tearable|terrible",
+        comment: "It's tearable..."
     },
     {
-        question: "What is the most competitive season?",
-        answer: "winter|win-ter",
-        comment: "Win-ter!"
+        question: "Why should you not buy clothes with velcro stitched on?",
+        answer: "rip off|rip-off",
+        comment: "It's a rip off!"
     },
     {
-        question: "How can Santa deliver presents during a thunderstorm?",
-        answer: "raindeer|rain dear",
-        comment: "His sleigh is flown by rain...deer. Sorry that was terrible. Couldn't help myself!"
+        question: "What’s an astronaut’s favorite part of a computer?",
+        answer: "space bar",
+        comment: "The space bar!"
     },
     {
-        question: "Where do Christmas trees go when they want to become movie stars",
-        answer: "hollywood|holly-wood|holly wood",
-        comment: "Holly-wood!"
+        question: "What did the flowers do when the bride walked down the aisle? ",
+        answer: "rose",
+        comment: "They rose, of course!"
     },
     {
-        question: "How do Christmas angels greet each other?",
-        answer: "halo|ha-lo",
-        comment: "Ahhh, halo! Get it?"
+        question: "What did the coffee report to the police?",
+        answer: "mugging",
+        comment: "A mugging!"
     },
     {
-        question: "What athlete is warmest in winter?",
-        answer: "long jump|long jumper",
-        comment: "A long jumper!"
+        question: "If Sunday is a sad day, what's the day before it?",
+        answer: "sadder day|sadderday",
+        comment: "A sadder day! Ha!"
     },
     {
-        question: "What do you find in December but not in any other month?",
-        answer: "d",
-        comment: "The letter D! Ha!"
+        question: "Now, which US state is known for its especially small soft drinks?",
+        answer: "minnesota",
+        comment: "Minnesota! Get it?"
     },
     {
-        question: "Which of Santa’s reindeer are dinosaurs afraid of?",
-        answer: "comet",
-        comment: "Comet!"
+        question: "Why was the pig covered in ink?",
+        answer: "pen",
+        comment: "Because it lived in a pen"
+    },
+    {
+        question: "What do you call two octopuses that look the same?",
+        answer: "itenticle",
+        comment: "Itenticle..."
+    },
+    {
+        question: "How do you talk to a giant?",
+        answer: "big words",
+        comment: "You use big words!"
+    },
+    {
+        question: "Why is no one friends with Dracula?",
+        answer: "pain in the neck",
+        comment: "He's a pain in the neck!"
+    },
+    {
+        question: "What do you call an alligator in a vest?",
+        answer: "investigator",
+        comment: "An investigator!"
+    },
+    {
+        question: "What has four wheels and flies?",
+        answer: "garbage truck|rubbish truck|bin collection truck",
+        comment: "A garbage/rubbish truck"
+    },
+    {
+        question: "Why are pigs so bad at sports?",
+        answer: "hog the ball",
+        comment: "They always hog the ball!"
+    },
+    {
+        question: "What should you give a sick lemon?",
+        answer: "lemon-aid|lemonade",
+        comment: "Lemon-aid!"
+    },
+    {
+        question: "What key is used to open bananas?",
+        answer: "monkey|mon-key",
+        comment: "A mon-key!"
+    },
+    {
+        question: "Why can't a leopard hide?",
+        answer: "spotted",
+        comment: "He's always spotted!"
+    },
+    {
+        question: "Why did the picture go to prison?",
+        answer: "framed",
+        comment: "Because it was framed!"
+    },
+    {
+        question: "Why shouldn't you tell an egg a joke?",
+        answer: "crack",
+        comment: "It'll crack up!"
     },
 ]
-
-export { jokes };

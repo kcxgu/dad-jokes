@@ -1,6 +1,6 @@
 import { correctResponseOptions, incorrectResponseOptions } from "../utils/Responses";
 import { date } from "../utils/Date";
-import { jokes } from "../utils/JokesQA";
+import { jokes } from "../utils/ChristmasJokes";
 import { useState, useRef, useEffect } from "react";
 import HeaderComponent from "../components/Header";
 import FooterComponent from "../components/Footer";
@@ -26,7 +26,7 @@ export default function Jokes() {
 
 
     // Day-Set Logic
-    const startDate = new Date(2022, 10, 26);
+    const startDate = new Date(2022, 10, 28);
     const msOffset = Date.now() - startDate;
     const dayOffset = msOffset / 1000 / 60 / 60 / 24;
 
@@ -40,6 +40,12 @@ export default function Jokes() {
     if (!targetSet) {
         jokes.sort(() => Math.random() - 0.5)
         targetSet = jokes.slice(0, jokeLimit)
+    }
+
+    function handleEnterKey(e) {
+        if (e.code === "Enter") {
+            handleInput()
+        }
     }
 
     const handleInput = () => {
@@ -148,6 +154,7 @@ export default function Jokes() {
                             id="input"
                             placeholder="Enter your answer here"
                             ref={input}
+                            onKeyDown={handleEnterKey}
                         />
                         <button onClick={handleInput}>Send</button>
                     </div>

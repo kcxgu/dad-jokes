@@ -1,6 +1,6 @@
 const correctResponseOptions = [
     "HO HO HO!",
-    "LOL, that was my funniest one yet!",
+    "LOL!",
     "HA",
     "Good going, kiddo!",
     "HA HA HA. Sorry, I meant HO HO HO!",
