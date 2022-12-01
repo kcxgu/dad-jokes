@@ -26,7 +26,7 @@ export default function Jokes() {
 
 
     // Day-Set Logic
-    const startDate = new Date(2022, 10, 28);
+    const startDate = new Date(2022, 10, 31);
     const msOffset = Date.now() - startDate;
     const dayOffset = msOffset / 1000 / 60 / 60 / 24;
 

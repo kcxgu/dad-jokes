@@ -59,13 +59,13 @@ export default function EndComponent() {
                 </div>
             </div>
             <div className="external-forms">
-                <div className="link-row">
+                {/* <div className="link-row">
                     <p>
                         <a href="https://kcxgu.github.io/" target="_blank" rel="noopener noreferrer">
                             See my other projects
                         </a>
                     </p>
-                </div>
+                </div> */}
                 <div className="link-row">
                     <p>
                         <a href="https://forms.gle/fFa2VZmbfjjAb4RL9" target="_blank" rel="noopener noreferrer">

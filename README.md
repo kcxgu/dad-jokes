@@ -44,7 +44,7 @@ Jokes.js
 
 - Development stage used BrowserRouter. This uses HTML5 history API but needs to be backed by a web server. It needs control over the server so that you can serve index.html for all routes.
 
-- However, BrowserRouter didn't work upon deployment because we don't have control of the Github pages so I switched from BrowserRouter to HashRouter;
+- However, BrowserRouter didn't work upon deployment because we don't have control of the GitHub Pages so I switched from BrowserRouter to HashRouter;
 
 - HashRouter uses URL hash, which puts no limitations on supported browsers or web server. Server-side routing is independent from client-side routing. It is not limited to single page applications.
 
@@ -63,7 +63,7 @@ Jokes.js
 - JS loops
 - Regular Expression
 - Difference between browser router and hash router
-- Deploying a React project to Github pages 
+- Deploying a React project to GitHub Pages 
 
 ## To do:
 - Add keyboard for mobile
