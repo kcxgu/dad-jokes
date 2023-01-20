@@ -1,11 +1,13 @@
 const correctResponseOptions = [
-    "HO HO HO!",
+    // "HO HO HO!",
     "LOL!",
     "HA",
     "Good going, kiddo!",
-    "HA HA HA. Sorry, I meant HO HO HO!",
+    "Yeah!",
+    "HA HA HA!",
     "You're turning into a dad, yourself!",
     "You heard that one before, haven't you?",
+    "HA",
 ]
 
 const incorrectResponseOptions = [

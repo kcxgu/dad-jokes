@@ -7,8 +7,7 @@ export default function Home() {
         <div className="app">
             <div className="container">
                 <header className="app-header">
-                    <h1>Dad Jokes 🎅</h1>
-                    <p>❄️ Christmas Edition ❄️</p>
+                    <h1>Dad Jokes 🥸</h1>
                     <p>An indescribably cheesy joke typically (but not necessarily) made by a father to his children.</p>
                 </header>
                 <img src={faceImg} alt='dad jokes head back laughing' id='face'></img>

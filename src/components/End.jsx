@@ -6,31 +6,28 @@ import './Components.css';
 export default function EndComponent() {
     const [msg, setMsg] = useState("");
 
-    function copyLink() {
-        const copyBtn = document.querySelector("#copy-link");
-        const shareBtn = document.querySelector("#share-link")
-        const shareLink = {
+    const copyLink = async e => {
+        try {
+            await navigator.clipboard.writeText(shareLink.url);
+            setMsg("Copied!");
+        } catch (err) {
+            setMsg("Try copying manually");
+        }
+    }
+
+    const shareLink = async e => {
+        const share = {
             title: 'Dad Jokes',
             text: 'Can you beat me at dad jokes?',
             url: 'https://kcxgu.github.io/dad-jokes/'
         }
-        copyBtn.addEventListener('click', async () => {
-            try {
-                await navigator.clipboard.writeText(shareLink.url);
-                setMsg("Copied!");
-            } catch (err) {
-                setMsg("Try copying manually");
-            }
-        });
 
-        shareBtn.addEventListener('click', async () => {
-            try {
-                await navigator.share(shareLink);
-                setMsg("Copied!");
-            } catch (err) {
-                setMsg("Try copying manually");
-            }
-        });
+        try {
+            await navigator.share(share);
+            setMsg("Copied!");
+        } catch (err) {
+            setMsg("Try copying manually");
+        }
     }
 
     return (
@@ -49,7 +46,7 @@ export default function EndComponent() {
                         <button id="copy-link" onClick={copyLink}>
                             <img src={copyIcon} alt="copy link to dad jokes game"></img>
                         </button>
-                        <button id="share-link" onClick={copyLink}>
+                        <button id="share-link" onClick={shareLink}>
                             <img src={shareIcon} alt="share link to dad jokes game"></img>
                         </button>
                     </div>

@@ -1,4 +1,4 @@
-const jokes = [
+export const jokes = [
     {
         question: "What's a robot's favorite snack?",
         answer: "computer chips",
@@ -1255,7 +1255,7 @@ const jokes = [
         comment: "Darth Waiter!"
     },
     {
-        question: "WWhat kind of music scares balloons?",
+        question: "What kind of music scares balloons?",
         answer: "pop",
         comment: "Pop music!"
     },

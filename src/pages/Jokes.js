@@ -1,6 +1,6 @@
 import { correctResponseOptions, incorrectResponseOptions } from "../utils/Responses";
 import { date } from "../utils/Date";
-import { jokes } from "../utils/ChristmasJokes";
+import { jokes } from "../utils/JokesQA";
 import { useState, useRef, useEffect } from "react";
 import HeaderComponent from "../components/Header";
 import FooterComponent from "../components/Footer";
